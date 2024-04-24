@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-19T13:42:58 IST" name="Default suite" finished-at="2024-04-19T13:43:24 IST" duration-ms="25925">
+  <suite started-at="2024-04-20T18:11:52 IST" name="Default suite" finished-at="2024-04-20T18:12:21 IST" duration-ms="28511">
     <groups>
     </groups>
-    <test started-at="2024-04-19T13:42:58 IST" name="Default test" finished-at="2024-04-19T13:43:24 IST" duration-ms="25925">
+    <test started-at="2024-04-20T18:11:52 IST" name="Default test" finished-at="2024-04-20T18:12:21 IST" duration-ms="28511">
       <class name="app.generalstore.test.GeneralStoreTest">
-        <test-method is-config="true" signature="andriodDriverSetup()[pri:0, instance:app.generalstore.test.GeneralStoreTest@202b0582]" started-at="2024-04-19T13:42:58 IST" name="andriodDriverSetup" finished-at="2024-04-19T13:43:04 IST" duration-ms="5875" status="PASS">
+        <test-method is-config="true" signature="andriodDriverSetup()[pri:0, instance:app.generalstore.test.GeneralStoreTest@2034b64c]" started-at="2024-04-20T18:11:52 IST" name="andriodDriverSetup" finished-at="2024-04-20T18:12:01 IST" duration-ms="8457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- andriodDriverSetup -->
-        <test-method signature="productPurchase()[pri:0, instance:app.generalstore.test.GeneralStoreTest@202b0582]" started-at="2024-04-19T13:43:04 IST" name="productPurchase" finished-at="2024-04-19T13:43:23 IST" duration-ms="19749" status="PASS">
+        <test-method signature="productPurchase()[pri:0, instance:app.generalstore.test.GeneralStoreTest@2034b64c]" started-at="2024-04-20T18:12:01 IST" name="productPurchase" finished-at="2024-04-20T18:12:05 IST" duration-ms="4206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productPurchase -->
-        <test-method is-config="true" signature="serverStop()[pri:0, instance:app.generalstore.test.GeneralStoreTest@202b0582]" started-at="2024-04-19T13:43:23 IST" name="serverStop" finished-at="2024-04-19T13:43:24 IST" duration-ms="274" status="PASS">
+        <test-method signature="searchProduct()[pri:0, instance:app.generalstore.test.GeneralStoreTest@2034b64c]" started-at="2024-04-20T18:12:05 IST" name="searchProduct" finished-at="2024-04-20T18:12:15 IST" depends-on-methods="app.generalstore.test.GeneralStoreTest.productPurchase" duration-ms="9432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method signature="checkOut()[pri:0, instance:app.generalstore.test.GeneralStoreTest@2034b64c]" started-at="2024-04-20T18:12:15 IST" name="checkOut" finished-at="2024-04-20T18:12:21 IST" depends-on-methods="app.generalstore.test.GeneralStoreTest.searchProduct" duration-ms="6077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOut -->
+        <test-method is-config="true" signature="serverStop()[pri:0, instance:app.generalstore.test.GeneralStoreTest@2034b64c]" started-at="2024-04-20T18:12:21 IST" name="serverStop" finished-at="2024-04-20T18:12:21 IST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serverStop -->
