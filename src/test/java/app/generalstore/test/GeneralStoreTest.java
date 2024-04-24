@@ -17,9 +17,19 @@ public class GeneralStoreTest extends BaseClass {
 		loginPage.selectCountry("Andorra");
 		loginPage.enterUsername("Pradeep Suresh");
 		loginPage.selectGender("Male");
-		ProductPage productpage = loginPage.loginApp();
+		loginPage.loginApp();
+	}
+
+	@Test(dependsOnMethods = "productPurchase")
+	public void searchProduct() throws InterruptedException {
+		ProductPage productpage = new ProductPage(driver);
 		productpage.scrollToProduct("Nike SFB Jungle");
-		CartPage cartpage = productpage.openCart();
+		productpage.openCart();
+	}
+
+	@Test(dependsOnMethods = "searchProduct")
+	public void checkOut() throws InterruptedException {
+		CartPage cartpage = new CartPage(driver);
 		cartpage.productTotalCheck();
 		cartpage.checkBox();
 		cartpage.verifyTermsCondition();
